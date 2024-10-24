@@ -38,9 +38,9 @@ def recommend_books():
     return render_template('recommend.html',data=data)
 @app.route('/recommend.html')
 def recommend_ui():
-    return render_template('contact.html')
+    return render_template('recommend.html')
 @app.route('/contact.html')
 def contact():
-    return render_template('recommend.html')
+    return render_template('contact.html')
 if __name__ == '__main__':
        app.run(debug=True)
